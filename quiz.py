@@ -26,7 +26,7 @@ def generate_url(options):
 
 
 def decode(text):
-    return text.replace('&quot;', '').replace('&#039;', '\'')
+    return text.replace('&#039;', '\'').replace('&quot;', '\"')
 
 opening()
 response = requests.get(url)
